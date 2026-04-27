@@ -1,0 +1,12 @@
+Curso do Básico de Azure
+
+Modelo de Responsabilidade Compartilhada:
+Sua Equipe -> Responsável por manter o espaço físico, garantir a segurança e manter ou substituir os servidores se algo acontecer (responsável pela parte física).
+Para algumas coisas, a responsabilidade depende da situação. Se você estiver usando um banco de dados SQL na nuvem, o provedor de nuvem será responsável pela manutenção do banco de dados real.
+No entanto, você ainda é responsável pelos dados que são ingeridos no banco de dados. 
+
+Com a computação em nuvem essas responsabilidades mudam. O modelo de responsabilidade compartilhada está fortemente vinculado aos tipos de serviço de nuvem abordados posteriormente neste roteiro
+de aprendizagem: IaaS (Infraestrtura como serviço), PaaS (Plataforma como Serviço) e SaaS (Software como Serviço).
+IaaS -> Maior responsabilidade sobre o consumidor, com o provedor de nuvem sendo responsável pelas questões básicas de segurança físicas, energia e conectividade.
+SaaS -> Maior parte da responsabilidade com o provedor da nuvem.
+PaaS -> É um meio termo, distribuindo a responsabilidade uniformemente entre o provedor de nuvem e o consumidor.
