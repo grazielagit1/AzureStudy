@@ -71,11 +71,100 @@ Desempenho
 Concentra-se na previsão dos recursos necessários para oferecer uma experiência positiva para seus clientes. Dimensionamento automático, balanceamento de carga e alta disponibilidade são apenas alguns dos conceitos de nuvem que dão suporte à 
 previsibilidade de desempenho Se de repente você precisar de mais recursos, o dimensionamento automático poderá implantar recursos adicionais para atender à demanda e depois reduzir a implantação quando a demanda cair. Ou se o tráfego estiver 
 fortemente focado em uma área, o balanceamento de carga ajudará a redirecionar parte da sobrecarga para áreas menos estressadas.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Custo
 A previsibilidade de custos está focada em prever ou projetar os gastos com serviços de nuvem. Com a nuvem, você pode acompanhar o uso de recursos em tempo real, monitorar os recursos para garantir que você os esteja usando da maneira mais eficien-
 te e aplicar a análise de dados para encontrar padrões e tendências que ajudam a planejar melhor as implantações de recursos. Operando na nuvem e usando análise de nuvem e informações, você pode prever custos futuros e ajustar seus recursos conforme 
 necessário.
 Você pode até mesmo usar ferramentas como a Calculadora de Preços do Azure para obter uma estimativa de possíveis gastos em nuvem.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unidade 4
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Padronização e Conformidade
+Modelos de Implantação: O uso de templates garante que todos os recursos sigam padrões técnicos e regulatórios desde o início.
+Escalabilidade: É possível atualizar padrões em larga escala rapidamente.
+Auditoria Contínua: Ferramentas de nuvem monitoram e sinalizam automaticamente recursos fora de conformidade, oferecendo caminhos para mitigação.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unidade 5
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gerenciamento da nuvem
+Diz respeito a gerenciar seus recursos de nuvem. Na nuvem, voce pode:
+• Escalar automaticamente a implantação de recursos com base na necessidade.
+• Implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual.
+• Monitorar a integridade dos recursos e substituir automaticamente os recursos com falha.
+• Receba alertas automáticos com base nas métricas configuradas, para que você esteja ciente do desempenho em tempo real.
 
+Gerenciamento na nuvem
+Fala de como você é capaz de gerenciar seu ambiente de nuvem e recursos:
+• Por meio de um portal da Web.
+• Usando uma interface de linha de comando.
+• Usando APIs.
+• Usando o PowerShell.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unidade 6
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Por que a nuvem pode melhorar a eficiência?
+Os provedores de nuvem operam em grande escala, o que pode melhorar a utilização de recursos em comparação com muitos ambientes locais isolados. No Azure, você também pode reduzir o desperdício correspondendo recursos implantados à demanda real.
+Práticas de nuvem alinhadas à sustentabilidade
+Exemplos de práticas que dão suporte à sustentabilidade e à eficiência de custos incluem:
+
+• Redimensionar para baixo os recursos quando a demanda cai.
+• Desativar ou desalocar recursos que não estão em uso
+• Escolhendo serviços e configurações eficientes para reduzir o excesso de provisionamento
+• Usando governança e monitoramento para acompanhar tendências de uso e otimizar implantações ao longo do tempo
+• Por exemplo, um ambiente de desenvolvimento executado somente durante o horário comercial pode ser desligado automaticamente durante a noite e nos fins de semana. Essa prática reduz o consumo desnecessário enquanto ainda atende às necessidades da equipe.
+Em um nível fundamental, a sustentabilidade na nuvem está intimamente ligada a bons hábitos operacionais: tamanho certo, automatizar, monitorar e otimizar continuamente.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Descrever a infraesturura como um serviço
+A IaaS (Infraestutura como Serviço) é a categoria mais flexível de serviços de nuvem, nesse modelo, o provedor de nuvem é responsável por manter o hardware, a conectividade de rede com a internet e a segurança física. Voce é responsável por todo o resto, inclu-
+indo:
+• Instalação, configuração e manutenção do SO.
+• Configuração de rede.
+• Configuração de banco de dados e armazenamento.
+Com o IaaS, você apenas aluga o hardware em um datacenter de nuvem, mas o que você faz com esse hardware cabe a você.
+Foco de responsabilidade no IaaS -> O provedor de nuvem é responsável pela infraestutura física e conectividade com a internet. Você gerencia a maior parte da Stack de carga de trabalho, incluindo SO, att, configuração e etc. Esse modelo oferece flexibilidade máxima
+e a maior responsabilidade operacional.
+
+Cenários
+Cenários comuns em que IaaS faz sentido:
+• Migração lift-and-shift: você configura recursos de nuvem de forma semelhante aos do seu datacenter local e, em seguida, move suas cargas de trabalho para a infraestrutura de IaaS.
+• Teste e desenvolvimento: você precisa replicar rapidamente as configurações estabelecidas para ambientes de desenvolvimento e teste. Você pode iniciar ou desligar ambientes diferentes rapidamente com uma estrutura IaaS, mantendo o controle completo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PaaS
+O PaaS é o "meio-termo" da computação em nuvem. Ele oferece um ambiente pronto para que desenvolvedores possam criar, hospedar e gerir aplicativos sem a complexidade de configurar servidores ou sistemas operacionais.
+O que o Provedor Gerencia:
+• O provedor de nuvem assume a responsabilidade pela parte "pesada" da infraestrutura:
+• Infraestrutura Física: Servidores, armazenamento e rede.
+• Plataforma: Sistemas operacionais (Windows/Linux), middleware e runtimes (como Java, .NET, Python).
+• Manutenção: Atualizações de segurança (patching), licenciamento e ferramentas de análise.
+
+O que Você Gerencia:
+Sua equipe foca exclusivamente no que gera valor para o negócio:
+• Código do Aplicativo: O desenvolvimento do software em si.
+• Dados: As informações processadas e armazenadas.
+• Acesso: Controle de quem pode utilizar ou administrar a aplicação.
+
+Principais Benefícios
+• Agilidade: Você pula a fase de configuração de hardware e software e vai direto para o código.
+• Menor Custo Operacional: Sem gastos com licenciamento manual de SO ou manutenção de servidores físicos.
+• Escalabilidade: Facilidade para aumentar a capacidade do app conforme o número de usuários cresce.
+Resumo da responsabilidade: No PaaS, você cuida do conteúdo (app e dados), enquanto o provedor cuida do recipiente (servidores e sistemas).
+
+Cenários
+Cenários comuns em que o PaaS pode fazer sentido incluem:
+• Estrutura de desenvolvimento: o PaaS fornece uma estrutura que os desenvolvedores podem criar para desenvolver ou personalizar aplicativos baseados em nuvem. Os desenvolvedores podem criar aplicativos usando componentes de software internos. São incluídos recursos de nuvem,
+como escalabilidade, alta disponibilidade e a funcionalidade de multilocatário, reduzindo a quantidade de codificação que os desenvolvedores precisam realizar.
+• Análise ou business intelligence: as ferramentas fornecidas como um serviço com PaaS permitem que as equipes analisem e mineram seus dados, encontrem insights e padrões e prevejam resultados para melhorar o planejamento e as decisões operacionais.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Saas
+O SaaS (Software como Serviço) é o modelo de serviço de nuvem mais completo do ponto de vista do produto, com ele você está essencialmente alugando ou usando um aplicativo totalmente desenvolvido, e-mail, software financeiro, aplicativos de mensagens e software de conectividade são
+exemplos de implementação. Embora seja o menos flexível, é o mais fácil de colocar em prática, requer menor conhecimento técnico.
+No SaaS, o provedor de nuvem gerencia quase toda a pilha de aplicativos, incluindo infraestrutura, plataforma e manutenção de aplicativos. Você gerencia principalmente seus dados, identidade e configurações de acesso e postura de acesso ao dispositivo. O SaaS tem a menor sobrecarga 
+operacional para os clientes.
+
+Cenários
+Cenários comuns para SaaS incluem:
+• Email e mensagens.
+• Aplicativos de produtividade.
+• Controle de finanças e despesas.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
