@@ -1,31 +1,33 @@
 Curso do Básico de Azure
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unidade 1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Modelo de Responsabilidade Compartilhada:
 Sua Equipe ->
 Responsável por manter o espaço físico, garantir a segurança e manter ou substituir os servidores se algo acontecer (responsável pela parte física).
 Para algumas coisas, a responsabilidade depende da situação. Se você estiver usando um banco de dados SQL na nuvem, o provedor de nuvem será responsável pela manutenção do banco de dados real.
 No entanto, você ainda é responsável pelos dados que são ingeridos no banco de dados. 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Com a computação em nuvem essas responsabilidades mudam. O modelo de responsabilidade compartilhada está fortemente vinculado aos tipos de serviço de nuvem abordados posteriormente neste roteiro
 de aprendizagem: IaaS (Infraestrtura como serviço), PaaS (Plataforma como Serviço) e SaaS (Software como Serviço).
 IaaS -> Maior responsabilidade sobre o consumidor, com o provedor de nuvem sendo responsável pelas questões básicas de segurança físicas, energia e conectividade.
 SaaS -> Maior parte da responsabilidade com o provedor da nuvem.
 PaaS -> É um meio termo, distribuindo a responsabilidade uniformemente entre o provedor de nuvem e o consumidor.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 O que sempre fica com você
 Ao usar um provedor de nuvem, você é sempre responsável por:
 
 -> As informações e os dados armazenados na nuvem
 -> Dispositivos que têm permissão para se conectar à nuvem (celulares, computadores e assim por diante)
 -> As contas e identidades das pessoas, serviços e dispositivos em seu ambiente
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 O que o provedor sempre possui
 O provedor de nuvem é sempre responsável por:
 
 -> O datacenter físico
 -> A rede física
 -> Hosts físicos
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Definir modelos de nuvem
 São o tipo de implantação de recursos de nuvem, sendo os três principais modelos 
 Privado:
@@ -38,4 +40,42 @@ Pública:
 Híbrida:
 -> Usa as nuvens públicas e privadas em um ambiente interconectado. Permite que uma nuvem privada escale para atender a uma demanda maior temporária implantando recursos de nuvem pública. A nuvem híbrida
 pode ser usada
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unidade 2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Quando você está implantando um aplicativo, um serviço ou qualquer recurso de TI, é importante que os recursos estejam disponíveis quando necessário. A alta disponibilidade se concentra em garantir a disponibilidade
+máxima, independentemente de interrupções ou eventos que possam ocorrer.
+Ao arquitetar sua solução, você precisa considerar as garantias de disponibilidade do serviço. O Azure é um ambiente de nuvem altamente disponível com garantias de tempo de atividade, dependendo do serviço. Essas garantias
+fazem parte dos SLAs (Contratos de Nível de Serviço).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Escalabilidade
+É a capacidade de ajustar recursos para atender à demanda. Se você experimentar um pico repentino de tráfego e seus sistemas ficarem sobrecarregados, a capacidade de escalar significa que você poderá adicionar mais recursos para
+lidar melhor com o aumento da demanda.O outro benefício da escalabilidade é que você não está pagando além do necessário pelos serviços. Como a nuvem é um modelo baseado em consumo, você paga apenas pelo que usa. Se a demanda cair,
+você poderá reduzir seus recursos e, assim, reduzir seus custos.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dimensionamento vertical
+Desenvolvendo um aplicativo, caso você precise de mais capacidade de processamento, escalar verticalmente para adicionar mais CPU ou RAM na MV, também tem a possibilidade de reduzi-las verticalmente.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Escalabilidade horizontal
+Pode-se adicionar MVs ou conteiners adicionais, se houver uma queda significativa na demanda, os recursos implantados poderão ser dimensionados (automaticamente ou manualmente).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Confiabilidade
+Capacidade de um sistema se recuperar de falhas e continuar funcionando. A nuvem, em virtude de seu design descentralizado, naturalmente dá suporte a uma infraestrutura confiável e resiliente. Sendo descentralizado, a nuvem permite que mesmo uma
+região tenha um evento catastrófico, outras regiões ainda estarão em funcionamento.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Previsibilidade 
+A previsibilidade na nuvem permite que você avance com confiança. A previsibilidade pode ser focada na previsibilidade de desempenho ou na previsibilidade de custos. Tanto o desempenho quanto a previsibilidade de custos são fortemente influencia-
+dos pelo Microsoft Azure Well-Architected Framework. Implante uma solução criada em torno dessa estrutura e você tem uma solução cujo custo e desempenho são previsíveis.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Desempenho
+Concentra-se na previsão dos recursos necessários para oferecer uma experiência positiva para seus clientes. Dimensionamento automático, balanceamento de carga e alta disponibilidade são apenas alguns dos conceitos de nuvem que dão suporte à 
+previsibilidade de desempenho Se de repente você precisar de mais recursos, o dimensionamento automático poderá implantar recursos adicionais para atender à demanda e depois reduzir a implantação quando a demanda cair. Ou se o tráfego estiver 
+fortemente focado em uma área, o balanceamento de carga ajudará a redirecionar parte da sobrecarga para áreas menos estressadas.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Custo
+A previsibilidade de custos está focada em prever ou projetar os gastos com serviços de nuvem. Com a nuvem, você pode acompanhar o uso de recursos em tempo real, monitorar os recursos para garantir que você os esteja usando da maneira mais eficien-
+te e aplicar a análise de dados para encontrar padrões e tendências que ajudam a planejar melhor as implantações de recursos. Operando na nuvem e usando análise de nuvem e informações, você pode prever custos futuros e ajustar seus recursos conforme 
+necessário.
+Você pode até mesmo usar ferramentas como a Calculadora de Preços do Azure para obter uma estimativa de possíveis gastos em nuvem.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
